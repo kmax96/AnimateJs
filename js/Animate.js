@@ -1,4 +1,6 @@
-﻿var div_maskId = "div_mask";
+﻿//
+
+var div_maskId = "div_mask";
 var div_SlideId = "div_slide";
 
 function GetDefaultPanelId() {
