@@ -14,14 +14,10 @@ function GetRootPanel(panelId) {
     else {
         return document.getElementById(panelId);
     }
-
-
-
 }
 
 
 function ShowImageSlide(imgSrc, closeText, tipsDesc, panelId) {
-
 
 
     messageText = "Loading...";
@@ -75,7 +71,6 @@ function ShowImageSlide(imgSrc, closeText, tipsDesc, panelId) {
             checkbox.value = "value";
             //checkbox.className = "floatLeft";
             checkbox.id = "cb_slide";
-
 
 
             var div_tmp = document.createElement('div');
@@ -136,10 +131,6 @@ function ShowImageSlide(imgSrc, closeText, tipsDesc, panelId) {
         div_Slide.appendChild(div_obj);
 
         GetRootPanel(panelId).appendChild(div_Slide);
-
-
-
-
 
     }
 
