@@ -1,0 +1,118 @@
+﻿
+.div_slide {
+    z-index: 50000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /*background-color: #424242;*/
+    /* content:url(../Content/Images/loading1.gif);*/
+}
+
+.div_slideClose {
+    /*float:left;
+    position: absolute;*/
+    color: #6E6E6E;
+    font-size: 55px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+.div_mask {
+    z-index: 50000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #424242;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+    filter: alpha(opacity=50); /* IE 5-7 */
+    -moz-opacity: 0.5; /* Netscape */
+    -khtml-opacity: 0.5; /* Safari 1.x */
+    opacity: 0.5; /* Good browsers */
+    /* content:url(../Content/Images/loading1.gif);*/
+}
+
+.CenterText {
+    top: 45%;
+    left: 40%;
+    position: absolute;
+}
+
+.RightTopText {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.MaskText {
+    z-index: 10000;
+    min-width: 250px;
+    padding: 10px 20px 10px 20px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+    filter: alpha(opacity=80); /* IE 5-7 */
+    -moz-opacity: 0.8; /* Netscape */
+    -khtml-opacity: 0.8; /* Safari 1.x */
+    opacity: 0.8; /* Good browsers */
+    background-color: #424242;
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    border-radius: 10px;
+}
+
+    .MaskText > div > span {
+        padding: 10px;
+        top: 10px;
+        position: relative;
+    }
+
+    .MaskText > div {
+        float: left;
+    }
+
+
+
+.img_Tick {
+    content: url(../Content/Images/Tick.png);
+    background-image: url(../Content/Images/Tick.png);
+    width: 50px;
+    height: 50px;
+}
+
+
+.img_Cross {
+    content: url(../Content/Images/Cross.png);
+    background-image: url(../Content/Images/Cross.png);
+    width: 50px;
+    height: 50px;
+}
+
+.MaskLoadingImage {
+    top: 45%;
+    left: 47%;
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    /*default image
+     content: url(data:image/gif;base64,R0lGODlhRgAUAJECAP9qAP///////wAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowQTU3Q0RDNzFGQzBFNTExQkU4QkQ2QzBFREJCREEzRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4MkU3RTYwMkMwMjAxMUU1QUQyM0VERDA5QzE1MjE3OCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4MkU3RTYwMUMwMjAxMUU1QUQyM0VERDA5QzE1MjE3OCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBDNTdDREM3MUZDMEU1MTFCRThCRDZDMEVEQkJEQTNFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBBNTdDREM3MUZDMEU1MTFCRThCRDZDMEVEQkJEQTNFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEBRcAAgAsAAAAAEYAFAAAAiSUj6nL7Q+jnLTai7PevPsPhuJIluaJpurKtu4Lx/JM1/aNawUAIfkEBSEAAgAsAgAJABMACQAAAhaEj5nB7c8MnE5Sai/MuoK+faCnlEkBACH5BAUhAAIALBkABAATAA4AAAIdhI+Zwe3PDJxOUmovzLqCvn2gN5JlJJ7cuILK+xYAIfkEBTUAAgAsLwABABMAEQAAAiKEj5nB7c8MnE5Sai/MuoK+faA3kmUknty4gm33avGl1HUBADs=);
+        */
+    background-image: url(../Content/Images/loading1.gif);
+    content: url(../Content/Images/loading1.gif);
+}
+
+
+#toTopButton {
+    cursor:pointer;
+    bottom: 10%;
+    right: 10%;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-image: url(../Content/Images/toTopButton.png);
+    /*content: url(../Content/Images/toTopButton.png);*/
+}
